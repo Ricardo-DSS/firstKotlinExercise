@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcule quanto tempo falta para a sua aposentadoria!"
+        android:gravity="center_horizontal"
+        android:textSize="16sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe o seu sexo:">
+    </TextView>
+
     <Spinner
+        android:id="@+id/spn_sexo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spn_sexo">
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck">
     </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe a sua idade:">
+    </TextView>
+
+    <EditText
+        android:id="@+id/txt_idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_name"
+        android:minHeight="48dp">
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/btn_calcular">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_resultado"
+        android:gravity="center_horizontal"
+        android:textSize="16sp">
+    </TextView>
 
 </LinearLayout>
 
